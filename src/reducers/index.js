@@ -16,13 +16,13 @@ export const cards = (state, action) => {
   case RECEIVE_DATA:
     return action.data.cards || state;
   case ADD_CARD:
-    let newCard = Object.assign({}, action.data, {
+    const newCard = Object.assign({}, action.data, {
       score: 1,
       id: +new Date
     });
     return state.concat([newCard]);
   case UPDATE_CARD:
-    let cardUpdate = action.data;
+    const cardUpdate = action.data;
     return state.map(card => (card.id !== cardUpdate.id) ?
         card :
         Object.assign({}, card, cardUpdate)
@@ -39,7 +39,7 @@ export const decks = (state, action) => {
   case RECEIVE_DATA:
     return action.data.decks || state;
   case ADD_DECK:
-    let newDeck = { name: action.data, id: +new Date };
+    const newDeck = { name: action.data, id: +new Date };
     return state.concat([newDeck]);
   default:
     return state || [];

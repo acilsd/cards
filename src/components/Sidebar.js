@@ -18,7 +18,7 @@ class Sidebar extends Component {
   }
 
   render() {
-    let props = this.props;
+    const props = this.props;
     return (
       <div class='sidebar'>
         <h2> Card Decks </h2>
