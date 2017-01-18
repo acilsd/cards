@@ -2,7 +2,7 @@
 
 --- A very simple App, build with React, Redux and some useful libs
 
---- Study algorithm has been found somewhere in the internet (cannot remember where :3)
+--- Study algorithm was found somewhere in the internet (cannot remember where :3)
 
 $npm install
 
